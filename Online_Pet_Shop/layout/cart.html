@@ -1,0 +1,20 @@
+<br><br> 
+    <div>
+        <h3>GIỎ HÀNG CỦA BẠN</h3><hr>
+    </div><hr>
+        <div ng-repeat="item in carts" ng-init="setTotals(item)">
+            <!--nút xóa, hình ảnh, tên-giá sản phẩm-->
+            <button class="btn btn-danger" ng-click="removeCart(item)" style="font-size: 20px;">x</button>
+                <img src="/IMAGES/{{item.img}}" alt=""style="width:20%;margin-left:200px">
+                <b style="font-size: 20px;margin-left:200px">{{item.name}} - {{item.price}}<sup>đ</sup></b>
+            </div><hr>
+        </div><hr>
+        <div class="summary d-flex justify-content-between">
+            <h3>Tổng tiền</h3>
+            <!--tổng tiền-->
+            <p style="font-size: 20px;color:red">{{total}}<sup>đ</sup></p>
+            <!--thanh toán-->
+            <a class="btn btn-danger" href="#!thanhtoan" style="font-size:20px"> Thanh toán </a>
+        </div><br><br>
+    </div>
+</div>

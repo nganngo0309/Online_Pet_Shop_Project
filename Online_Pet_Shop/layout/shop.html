@@ -1,0 +1,95 @@
+<html>
+<head>
+    <style>
+        .card-columns card-body {
+            cursor: pointer;
+            position: relative;
+        }
+          /*hover hình ảnh của sản phẩm */
+        .sp:hover{filter: grayscale(100%)}
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" style="width:1550px;margin-left:-210px"style="width: 100%; height:auto; background-color:white;color:black;padding-bottom:100px">
+        <div class="row">
+            <!--tiêu đề-->
+            <div class="col-lg-9">
+                <div style="text-align: justify;margin:18px;line-height: 30px;font-size:20px">
+                    <br>
+                    <h1 style="font-family: cursive;font-size: 60px;"> PROCDUCT LIST</h1><br><br>
+                </div>
+                <!--sắp xếp theo giá-->
+                <div style="margin-left:20px;font-size:20px"> 
+                Xắp xếp theo giá
+                <button class="btn btn-danger" ng-click="sortBy('price', flase)">Tăng dần</button> hoặc 
+                <button class="btn btn-danger" ng-click="sortBy('price', true)">Giảm dần</button>
+                </div>
+                <!--Các sản phẩm-->
+                <div class="card-columns">
+                    <div class="card text-center shadow mt-5" ng-repeat="prd in products | filter: search | 
+                    limitTo:pageSize:begin | orderBy : col : flag"
+                    style="border: 3px dashed #b1154a;">
+                        <!--ảnh sản phẩm-->
+                        <div class="card-body"><img src="/IMAGES/{{prd .img}}" alt="" class="sp" style="width:100%;"></div>
+                        <!--tên,giá,nút mua sản phẩm-->
+                        <div class="card-footer text-dark font-weight-bold" style="background-color:white">
+                            <i style="font-size:20px;color:rgb(175, 21, 16)">{{prd .name | uppercase}}<br></i>
+                            {{prd .price | number}} <span><sup>đ</sup></span><br>
+                            <img src="IMAGES/muahang.PNG" class="btn" style="width:70%" ng-click="addcart(prd)">
+                        </div>
+                    </div>
+                </div>
+                <!--phân trang sản phẩm-->
+                <div class="page text-center"><br><Br><Br>
+                    <a class="btn btn-danger" ng-click="first()">First Page</a>
+                    <a class="btn btn-danger" ng-click="previous()"><<</a>
+                    <a class="btn btn-danger" ng-click="next()">>></a>
+                    <a class="btn btn-danger" ng-click="last()">Last Page</a><br><br>
+                </div>
+            </div>
+            <!--giỏ hàng-->
+            <div class="col-lg-3">
+                <div style="margin-top:250px"><br><br>
+                        <div  class="card bg-white shadow" style="text-align: center;">
+                            <img src="IMAGES/giohang.png"style="width:70%;margin-left:50px"><br>
+                            <a class="btn btn-danger" href="#!cart" style="font-size:20px"> Giỏ hàng của bạn <br>Tổng tiền: {{total}}<sup>đ</sup> </a>
+                        </div>
+                </div>
+                <!--hình ảnh-->
+                <img src="IMAGES/shopping.jpg" class="w-100" style="margin-top:0px">
+                <img src="IMAGES/shopping1.jpg" class="w-100" style="margin-top:0px">
+                <img src="IMAGES/sp2.jpg" class="w-100" style="margin-top:0px">
+            </div>
+        </div>
+    </div>
+    <!--thời gian mở cửa-->
+    <div class="row"><br><br><br><br></div>
+    <div class="container-fluid" style="width:1550px"
+    <div class="row" style="background-color:white;color:white">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5" style="background-color:black;color:white;padding:50px;padding-top:30px">
+            <p><br><Br>
+            <h1 style="font-size:50px;color:white">THỜI GIAN MỞ CỬA</h1>
+            <br>
+            <i style="font-size:20px;color:white">Pet Shop mang đến cho khách hàng những sản phẩm <br>tốt nhất,
+                hài lòng nhất, uy tín nhất </i><br><br><br>
+            <i class="bi bi-alarm-fill fa-1x" style="color:rgb(231, 229, 230);font-size:35px" aria-hidden="true"> T2 -
+                T6: 8h30 - 21h30 </i><br><br>
+            <i class="bi bi-alarm-fill fa-1x" style="color:rgb(248, 239, 244);font-size:35px" aria-hidden="true"> T7 -
+                CN: 8h00 - 22h00</i><br><br>
+            <i class="bi bi-house-fill fa-1x" style="color:rgb(248, 244, 246);font-size:35px" aria-hidden="true"> Địa
+                chỉ: 12 Trịnh Đình Thảo, P.Hòa thạnh, Q.Tân Phú, TP <br>Hồ Chí Minh</i><br><br>
+            </p>
+        </div>
+        <div class="col-lg-5">
+            <img src="IMAGES/shoppet.jpg" alt="" class="w-70" style="margin-top:-750px;margin-left:550px;width:100%; height:550px">
+        </div>
+        </div>
+    <div class="col-lg-1"></div>
+    </div>
+    <div class="row " style="background-color:white"><br><br><br><br></div>
+    </div>
+    </div>
+</body>
+</html>

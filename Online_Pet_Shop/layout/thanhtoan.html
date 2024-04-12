@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        /*màu background input khi form lỗi*/
+        input.ng-invalid{
+            background-color: rgb(255, 0, 0);
+        }
+        /*màu background form khi form đúng*/
+        form.ng-submitted{
+            background-color: rgb(242, 248, 221);
+        }
+        
+    </style>
+</head>
+<body>
+        <body ng-app="myapp">
+            <br><br>
+            <!--form vali-->
+            <h3>ĐIỀN THÔNG TIN:</h3>
+            <form name="frmUser" style="margin-top:50px;width:50%">
+                <label>Tên</label>
+                <input  class="form-control"name="txtTen" ng-model="text1" type="text" required>
+                <div ng-hide="frmUser.txtTen.$valid" style="color:Red">Nhập tên</div><br>
+                
+                <label>Email</label>
+                <input  class="form-control"name="txtEmail" ng-model="email" type="email" required>
+                <div ng-hide="frmUser.txtEmail.$valid" style="color:Red">Email không hợp lệ</div><br>
+                
+                <label>Số điện thoại</label>
+                <input  class="form-control"name="dt" ng-model="number" type="text" required>
+                <div ng-hide="frmUser.dt.$valid" style="color:Red">Nhập số điện thoại</div><br>
+
+                <label>Địa chỉ</label>
+                <input  class="form-control"name="dc" ng-model="text" type="text" required>
+                <div ng-hide="frmUser.dc.$valid" style="color:Red">Nhập địa chỉ</div><br>
+                <button type="submit" class="btn btn-danger">Submit</button><br>
+
+                <a href="#!shop"style="font-size:20px;color:red"><span>&#171;</span> Back to Shop</a>
+            </form>
+            <!--hình ảnh-->
+            <div class="delivery-content-right">
+                <img src="images/slide2.jpg"style="width:50%;margin-left:650px;margin-top:-550px;margin-bottom:70px;border-radius:50%;
+                -moz-border-radius:50%;-webkit-border-radius:50%;">
+            </div>
+            <i ng-show="frmUser.$valid">Bạn đã nhập đầy đủ thông tin <br> 
+                Click Submit để chúng tôi liên hệ tới bạn sớm nhất có thể</i><br><br>
+    </body>
+    <!--script-->
+    <script>
+        var app = angular.module("myapp",[]);
+    </script>
+</body>
+</html>

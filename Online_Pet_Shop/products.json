@@ -1,0 +1,165 @@
+
+[
+    {
+        "id": 1,
+        "name": "Kiềm cắt móng thú cưng",
+        "img": "kiemcatmong.jpg",
+        "price": 100000
+    },
+    {
+        "id": 2,
+        "name": "Thức ăn khô Beneful",
+        "img": "beneful.jpg",
+        "price": 67000
+    },
+    {
+        "id": 3,
+        "name": "Nệm Hotdog",
+        "img": "hotgog.jpg",
+        "price": 33000
+    },
+    {
+        "id": 4,
+        "name": "Thức ăn hỗn hơp",
+        "img": "chihuahua.webp",
+        "price": 707000
+    },
+    {
+        "id": 5,
+        "name": "Đồ chơi thú cưng",
+        "img": "dochoi.jfif",
+        "price": 290000
+    },
+    {
+        "id": 6,
+        "name": "Bát ăn thú cưng",
+        "img": "batanan.jpg",
+        "price": 195000
+    },
+    {
+        "id": 7,
+        "name": "Đồ chơi cho mèo",
+        "img": "dochoichomeo.jfif",
+        "price": 679000
+    },
+    {
+        "id": 8,
+        "name": "Băng đô thú cưng",
+        "img": "bangdo.webp",
+        "price": 300000
+    },
+    {
+        "id": 9,
+        "name": "Túi đựng đồ dùng",
+        "img": "tuicung.jfif",
+        "price": 280000
+    },
+    {
+        "id": 10,
+        "name": "Đồ chơi xương gặm",
+        "img": "xuongcho.jpg",
+        "price": 80000
+    },
+    {
+        "id": 11,
+        "name": "Đồ chơi banh gặm",
+        "img": "banhgam.jpg",
+        "price": 70000
+    },
+    {
+        "id": 12,
+        "name": "Rọ mõm",
+        "img": "romom.jpg",
+        "price": 30000
+    },
+    {
+        "id": 13,
+        "name": "Cần câu nhựa",
+        "img": "cancau.jpg",
+        "price": 35000
+    },
+    {
+        "id": 14,
+        "name": "Bàn cào chuột lò xo",
+        "img": "bancao.jpg",
+        "price": 105000
+    },
+    {
+        "id": 15,
+        "name": "Cào móng cho mèo lớn",
+        "img": "caomong.png",
+        "price": 95000
+    },
+    {
+        "id": 16,
+        "name": "Cá chép nhồi bông",
+        "img": "cachep.jpg",
+        "price": 100000
+    },
+    {
+        "id": 17,
+        "name": "Gãi ngứa lông mèo",
+        "img": "gaingua.jpg",
+        "price": 110000
+    },
+    {
+        "id": 18,
+        "name": "Chuồng sắt thú cưng",
+        "img": "chuongsat.jpg",
+        "price": 210000
+    },
+    {
+        "id": 19,
+        "name": "Bộ phụ kiện",
+        "img": "phukien.jpg",
+        "price": 230000
+    },
+    {
+        "id": 20,
+        "name": "Mắt kính chó mèo",
+        "img": "matkinh.jpg",
+        "price": 24000
+    },
+    {
+        "id": 21,
+        "name": "Dây dắt chò mèo",
+        "img": "daydat.jpg",
+        "price": 210000
+    },
+    {
+        "id": 22,
+        "name": "Dây dắt chò mèo",
+        "img": "daydat1.jpg",
+        "price": 230000
+    },
+    {
+        "id": 23,
+        "name": "Yếm cổ thú cưng",
+        "img": "yemco.jpg",
+        "price": 26800
+    },
+    {
+        "id": 24,
+        "name": "Địu cho thú cưng",
+        "img": "diu.jpg",
+        "price": 214000
+    },
+    {
+        "id": 25,
+        "name": "Vòng cổ thú cưng",
+        "img": "vongco.jpg",
+        "price": 230000
+    },
+    {
+        "id": 26,
+        "name": "Balo vận chuyển",
+        "img": "balo.webp",
+        "price": 215000
+    },
+    {
+        "id": 27,
+        "name": "Cà vạt thú cưng",
+        "img": "cavat.webp",
+        "price": 189000
+    }
+]
